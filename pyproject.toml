@@ -1,6 +1,6 @@
 [project]
 name = "ecclesiastical-calendar"
-version = "0.1.0"
+version = "0.1.1"
 description = "Computes liturgical dates and feast days for western Christian traditions."
 requires-python = ">=3.10"
 dependencies = []
