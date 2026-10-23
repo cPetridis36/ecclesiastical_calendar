@@ -55,3 +55,10 @@ computus.
 Ascension and Corpus Christi are returned on their traditional Thursday
 dates. Many provinces transfer them to the following Sunday; that transfer is
 not applied here.
+
+## Design notes
+
+The window stores values eagerly rather than keeping running aggregates. Running
+sums drift with floating point over long streams, and recomputing from a small
+buffer is cheap enough that the drift is not worth the speed.
+
